@@ -1,7 +1,14 @@
 public class ArrayUtility {
 
     public static void print(int[] array) {
-        System.out.println(array);
+        String FinalAnswer = "";
+        for (int i = 0; i<array.length; i++){
+            FinalAnswer += array[i];
+            if (i<array.length-1){
+                FinalAnswer += ", ";
+            }
+        }
+        System.out.println(FinalAnswer);
     }
 
     public static int sum(int[] array) {
